@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeText();">click me</button>
+    <p> Try to Change Me</p>
+</body>
+    <script>
+        const changeText = () => {
+            const p = document.querySelector('p');
+            p.textContent = 'I change because of an inline handler'
+            p.style.border = '5px solid green'
+        }
+
+    </script>
+</html>
